@@ -1,0 +1,91 @@
+Sentenze di cui fare la tabella di verità: 
+1. (Tet(a) ∧ Small(a)) ∨ (Cube(b) ∧ ¬Cube(b))
+				  x	
+	F  F  F    F  F  F T  
+	F  F  T    F  F  F T  
+	F  T  F    F  F  F T  
+	F  T  T    T  T  F T  
+	T  F  F    F  F  F F  
+	T  F  T    F  F  F F  
+	T  T  F    F  F  F F  
+	T  T  T    T  T  F F 
+	
+2. Cube(a) ∧ (¬Cube(a) ∨ ¬Small(a)) ∧ Small(a)
+					  x		
+	T  T    F F  F F  F  
+	T  F    T F  T T  F  
+	F  T    F T  T F  F  
+	F  F    F T  T T  F 
+
+3. Larger(a, b) ∧ (Larger(a, a) ∨ ¬Larger(a, b))
+				
+	T  T    T  T F  
+	T  F    F  F F  
+	F  T    F  T T  
+	F  F    F  T T 
+
+5. LeftOf(a, b) ∧ LeftOf(b, c) ∧ LeftOf(c, d)
+				  x	
+	T  T  T    T  T  
+	T  T  F    T  F  
+	T  F  T    F  F  
+	T  F  F    F  F  
+	F  T  T    F  F  
+	F  T  F    F  F  
+	F  F  T    F  F  
+	F  F  F    F  F 
+
+6. Larger(a, b) ∧ Larger(b, c) ∧ Larger(c, a)
+				  x	
+	T  T  T    T  T  
+	T  T  F    T  F  
+	T  F  T    F  F  
+	T  F  F    F  F  
+	F  T  T    F  F  
+	F  T  F    F  F  
+	F  F  T    F  F  
+	F  F  F    F  F 
+
+
+7. Between(a, b, c) ∧ LeftOf(a, b) ∧ LeftOf(b, c)
+				  x
+	T  T  T    T  T  
+	T  T  F    T  F  
+	T  F  T    F  F  
+	T  F  F    F  F  
+	F  T  T    F  F  
+	F  T  F    F  F  
+	F  F  T    F  F  
+	F  F  F    F  F 
+
+
+
+8. ¬[(Cube(a) ∨ ¬Small(a)) ∧ (Cube(a) ∨ ¬Medium(a))] ∧ Cube(a)
+							  x	
+	T  T  T   F  T F  T  T F  F  
+	T  T  F   F  T F  T  T T  F  
+	T  F  T   F  T T  T  T F  F  
+	T  F  F   F  T T  T  T T  F  
+	F  T  T   T  F F  F  F F  F  
+	F  T  F   T  F F  F  T T  F  
+	F  F  T   T  T T  F  F F  F  
+	F  F  F   F  T T  T  T T  F 
+
+
+
+10. ¬[FrontOf(a, b) ∨ ¬LeftOf(b, c)] ∧ Between(b, c, a)
+					  x
+	T  T  T   F  T F  F  
+	T  T  F   F  T F  F  
+	T  F  T   F  T T  F  
+	T  F  F   F  T T  F  
+	F  T  T   T  F F  T  
+	F  T  F   T  F F  F  
+	F  F  T   F  T T  F  
+	F  F  F   F  T T  F 
+
+
+
+
+
+

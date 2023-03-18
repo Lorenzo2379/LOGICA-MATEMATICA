@@ -1,0 +1,31 @@
+
+1. Either a is small or both c and d are large. 
+	Small(a) OR (Large(c) AND Large(d))
+	
+2. d and e are both in back of b.
+	BackOf(d,b) AND BackOf(e,b)
+
+3. d and e are both in back of b and larger than it.
+	BackOf(d,b) AND BackOf(e,b) AND Larger(d,b) AND Larger(e,b)
+	
+4. Both d and c are cubes, however neither of them is small.
+	Cube(d) AND Cube(c) AND !Small(d) AND !Small(c)
+	
+5. Neither e nor a is to the right of c and to the left of b.
+	(!RightOf(e,c) OR !RightOf(a,c)) AND (LeftOf(e,b) AND LeftOf(c,e))
+	!(RightOf(e,c) AND LeftOf(e,b)) AND !(RightOf(a,c) AND LeftOf(a,b)) // traduzione prof
+
+6. Either e is not large or it is in back of a.
+	!Large(e) OR BackOf(e,a)
+
+7. c is neither between a and b, nor in front of either of them.
+
+8. Either both a and e are tetrahedra or both a and f are.
+
+9. Neither d nor c is in front of either c or b.
+
+10. c is either between d and f or smaller than both of them.
+
+11. It is not the case that b is in the same row as c.
+
+12. b is in the same column as e, which is in the same row as d, which in turn is in the same column as a.
