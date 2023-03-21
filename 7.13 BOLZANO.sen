@@ -1,0 +1,1 @@
+7.2.4.28445macs:Mac OS X10.16SntFC1679432102854D1679433081860S93017Tet(a)$FrontOf(a,d)Cube(a) $ (LeftOf(a,d) | RightOf(a,d))Between(c, a, e) | Between(c,a,d)RightOf(c,d)$(RightOf(b,c) & LeftOf(b,e))Tet(e) & (RightOf(e,b) % LeftOf(b,e))(Dodec(b) & ~FrontOf(b,d)) | ~BackOf(d,b)BackOf(c,a)& FrontOf(c,e)s=49103;
