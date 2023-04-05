@@ -1,0 +1,7 @@
+7.2.5.30971wnds:Windows 1010.0SntFC1680608249223D1680610412599S873410@x (Cube(x) $ Small(x))
+; This still has a free occurrence of x. Fix it with
+; some parentheses. /x Cube(x)
+; Don't forget that quantifiers apply only to 
+; variables./v ((Cube(v) & Medium(v)) & Larger(v, v))/u (Small(u) & Cube(u)) ~/x (Larger(x, x) & Larger(x, x))@w (SameRow(w, w) $ SameRow(w, w))@x( @y( @z( (LeftOf(x, y) & LeftOf(y, z)) $ LeftOf(x, z))))@x( @y( (Larger(a, b) $ (Cube(a) & Dodec(b)) ) ))
+; This one is a bit tricky.  The problem is some 
+; missing parentheses.@x( @y ((Cube(x) & Cube(y)) $ LeftOf(x, y)))@x( @y ( Cube(x) $ /x Between(x, x, y) ))s=104883;
